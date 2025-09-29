@@ -1,0 +1,139 @@
+.hero {
+  background: linear-gradient(135deg, #fdfbfb, #e6e9f0);
+  color: #222c3b;
+  padding: 20px 5px;
+  position: relative;
+  overflow: hidden;
+  border-bottom: 1px solid #ddd;
+}
+
+.hero-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1300px;
+  margin: 0 auto;
+  flex-wrap: wrap; /* responsive */
+}
+
+.hero-content {
+  flex: 1;
+  min-width: 300px;
+  animation: fadeIn 1s ease;
+}
+
+.hero h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: #222c3b;
+}
+
+.hero p {
+  font-size: 1rem;
+  margin-bottom: 25px;
+  line-height: 1.5;
+  color: #555;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.primary-btn, .secondary-btn {
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.primary-btn {
+  background-color: #222c3b;
+  color: white;
+  border: none;
+}
+
+.primary-btn:hover {
+  background-color: #31445f;
+  transform: translateY(-2px);
+}
+
+.secondary-btn {
+  background-color: transparent;
+  border: 2px solid #222c3b;
+  color: #222c3b;
+}
+
+.secondary-btn:hover {
+  background-color: #222c3b;
+  color: white;
+  transform: translateY(-2px);
+}
+
+/* Feature Boxes */
+.hero-features {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.feature-box {
+  background-color: white;
+  padding: 10px 15px;
+  border-radius: 6px;
+  font-weight: 500;
+  font-size: 0.9rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+}
+
+.feature-box:hover {
+  transform: translateY(-3px);
+}
+
+/* Hero Image */
+.hero-image {
+  flex: 1;
+  min-width: 300px;
+  text-align: center;
+}
+
+.hero-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  animation: fadeIn 1.5s ease;
+}
+
+/* Popup Card */
+.hero-popup {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 250px;
+  box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+}
+
+.hero-popup h3 { color: #222c3b; margin-bottom: 10px; }
+.hero-popup p { font-size: 0.9rem; margin-bottom: 12px; }
+.hero-popup button {
+  background: #222c3b;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.hero-popup button:hover { background: #e68900; }
+
+/* Animations */
+@keyframes fadeIn { from { opacity: 0; transform: translateY(20px);} to { opacity: 1; transform: translateY(0);} }
