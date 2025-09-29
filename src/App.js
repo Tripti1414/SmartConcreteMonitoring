@@ -14,6 +14,7 @@ import Settings from "./pages/Settings";
 import Footer from "./components/Footer";
 import Contact from "./pages/Contact";
 import About from "./pages/About";
+import HeroSection from "./components/HeroSection";
 
 function App() {
   const [thresholds, setThresholds] = useState({
@@ -27,12 +28,14 @@ function App() {
       <Router>
         <div className="App">
           <Navbar />
+         
           <Routes>
             <Route path="/login" element={<Login />} />
             <Route
               path="/dashboard"
               element={
                 <ProtectedRoute>
+                  <HeroSection/>
                   <Dashboard />
                 </ProtectedRoute>
               }
