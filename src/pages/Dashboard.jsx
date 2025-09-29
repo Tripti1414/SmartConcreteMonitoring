@@ -16,7 +16,7 @@ function Dashboard() {
 
   return (
     <div className="dashboard">
-      <h2>Dashboard</h2>
+      <h1>Dashboard</h1>
       <div className="dashboard-content">
         <div className="left-column">
 <h2>🛰️ Sensor Overview</h2>

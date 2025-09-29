@@ -89,32 +89,56 @@
 }
 
 .save-btn {
-  background-color: #4caf50;
+  background-color: #222c3b;
   color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: transform 0.2s, background 0.3s;
+}
+.save-btn:hover {
+  background-color: #36404f;
+  transform: translateY(-2px);
 }
 
 .reset-btn {
-  background-color: #ff9800;
+  background-color: transparent;
+  border: 2px solid #222c3b;
+  color: #222c3b;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.reset-btn:hover {
+  background-color: #222c3b;
   color: white;
+  transform: translateY(-2px);
 }
 
 
 /* Logout Button */
 .settings-page button.logout-btn {
   float: right;
-  padding: 8px 16px;
-  background-color: #122d4b; /* bright orange-red */
-  color: #fff;
-  border: none;
-  border-radius: 6px;
-  font-weight: bold;
+    background-color:  white;
+  color: black;
+  border: 2px solid BLACK;
+  padding: 8px 12px; /* similar size to nav links */
+  border-radius: 8px;
   cursor: pointer;
-  transition: all 0.2s ease-in-out;
+  font-size: 1rem;
+  font-weight: 500;
 }
 
 .settings-page button.logout-btn:hover {
-  background-color: #ff9800; /* slightly darker on hover */
-  transform: scale(1.05);
+ background-color: #222c3b;
+  color: WHITE;
+  border: 2px solid white;
 }
 
 .settings-page button.logout-btn:active {

@@ -5,12 +5,21 @@
   /* min-height: 300vh; */
   padding: 20px 40px;
 }
+.dashboard h1{
+  display: flex;
+  justify-content: center;
+  font-size: 2.3rem;
+  color: #05132b;
+    font-family:  sans-serif;
 
+}
 .dashboard h2 {
   color: #05132b;
   margin-bottom: 20px;
   font-weight: bold;
   font-size: 30px;
+    font-family: sans-serif;
+
 }
 
 /* Main content layout: left + right */
@@ -42,8 +51,7 @@
   box-shadow: 0 4px 12px rgba(0,0,0,0.08);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   border-radius: 12px;
-  border-top-left-radius: 0; /* optional */
-  border-bottom-left-radius: 0; /* optional */
+
   border-left: 4px solid rgb(28, 39, 84);
 }
 
