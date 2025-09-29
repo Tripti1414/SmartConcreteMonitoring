@@ -1,0 +1,84 @@
+.sensors-page {
+  padding: 20px 40px;
+  background-color: #f5f6fa;
+  min-height: 100vh;
+  font-family: 'Arial', sans-serif;
+}
+
+.sensors-page h2 {
+  color: #05132b;
+  margin-bottom: 10px;
+}
+
+.timestamp {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.sensor-section {
+  margin-bottom: 30px;
+}
+
+.sensor-section h3 {
+  color: #05132b;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #05132b;
+  display: inline-block;
+  padding-bottom: 4px;
+}
+
+.sensor-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+   
+
+}
+
+.sensor-card {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 15px 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  min-width: 150px;
+  flex: 1 1 200px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border-left: 3px solid #ff9800;
+}
+
+.sensor-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+    border-left: 3px solid #ff9800;
+
+}
+
+.sensor-key {
+  font-weight: bold;
+  color: #111;
+  margin-bottom: 5px;
+    
+
+}
+
+.sensor-value {
+  font-size: 16px;
+  color: #05132b;
+}
+
+/* Alert style if value exceeds threshold */
+.sensor-card.alert {
+  border: 2px solid #ffd54d;
+  background-color: #fffff2;
+}
+
+.sensor-card.normal {
+  border: 2px solid #d9d9d9;
+}
+
+@media screen and (max-width: 768px) {
+  .sensor-cards {
+    flex-direction: column;
+  }
+}

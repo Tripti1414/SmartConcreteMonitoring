@@ -1,0 +1,90 @@
+/* Navbar.css */
+.navbar {
+  display: flex;
+  justify-content: space-between; /* logo left, hamburger/right */
+  align-items: center;
+  background-color: #222c3b;
+  padding: 15px 25px;
+  color: white;
+  position: relative;
+  font-family: Arial, sans-serif;
+}
+
+.navbar-logo {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.logo-text {
+  color: #ff9800;
+}
+
+/* Desktop links */
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-links li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navbar-links li a:hover {
+  color: #ffb74d;
+}
+
+/* Hamburger button */
+.navbar-toggle {
+  display: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+  color: #ff9800;
+}
+
+/* Responsive for mobile */
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-wrap: nowrap; /* keep logo & hamburger in same row */
+    padding: 10px 20px;
+  }
+
+  .navbar-toggle {
+    display: block;
+  }
+
+  .navbar-links {
+    flex-direction: column;
+    width: 100%;
+    display: none; /* hidden by default */
+    margin-top: 10px;
+    background-color: #2a2f40;
+    border-radius: 8px;
+    overflow: hidden;
+    position: absolute;
+    top: 60px; /* below navbar */
+    right: 0;
+    left: 0;
+    z-index: 999;
+  }
+
+  .navbar-links.active {
+    display: flex;
+  }
+
+  .navbar-links li a {
+    display: block;
+    padding: 12px 15px;
+    border-bottom: 1px solid #444;
+  }
+
+  .navbar-links li:last-child a {
+    border-bottom: none;
+  }
+}
