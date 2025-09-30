@@ -1,0 +1,32 @@
+.terms-container {
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 25px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+}
+
+.terms-container h1 {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 30px;
+  color: #222c3b;
+}
+
+.terms-section {
+  margin-bottom: 25px;
+}
+
+.terms-section h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #222c3b;
+}
+
+.terms-section p {
+  font-size: 16px;
+  line-height: 1.7;
+}
