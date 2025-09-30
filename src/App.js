@@ -5,7 +5,6 @@ import "react-toastify/dist/ReactToastify.css";
 import { AuthProvider } from "./context/AuthContext";
 import ProtectedRoute from "./components/ProtectedRoute";
 import Login from "./pages/Login";
-
 import Navbar from "./components/Navbar";
 import Dashboard from "./pages/Dashboard";
 import Sensors from "./pages/Sensors";
@@ -15,7 +14,8 @@ import Footer from "./components/Footer";
 import Contact from "./pages/Contact";
 import About from "./pages/About";
 import HeroSection from "./components/HeroSection";
-
+import Faq from "./pages/Faq";
+import Terms from "./pages/Terms";
 function App() {
   const [thresholds, setThresholds] = useState({
     stress: 40,
@@ -59,6 +59,9 @@ function App() {
             />
             <Route path="/contact" element={<Contact />} />
             <Route path="/about" element={<About />} />
+            <Route path="/faq" element={<Faq />} />
+                        <Route path="/terms" element={<Terms />} />
+
 
             {/* ✅ Default route goes to dashboard, not login */}
             <Route path="/" element={<Navigate to="/dashboard" />} />
